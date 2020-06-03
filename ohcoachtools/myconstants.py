@@ -1,0 +1,12 @@
+DATA_DIR = "./data"
+CACHE_DIR = "./cache"
+REPORTS_DIR = "./reports"
+
+LABEL_DATETIME = 'datetime'
+LABEL_UNIXTIME = 'unixtime_millis'
+LABEL_LATITUDE = 'latitude'
+LABEL_LONGITUDE = 'longitude'
+LABEL_SPEED = 'speed'
+LABEL_X = 'x'
+LABEL_Y = 'y'
+OCH_HEADER = [LABEL_DATETIME, LABEL_LATITUDE, LABEL_LONGITUDE, LABEL_SPEED]
