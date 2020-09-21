@@ -1,0 +1,37 @@
+class NmeaUtils:
+    Delimiter = ','
+
+    class MessageType:
+        AAM = 'AAM'
+        ALM = 'ALM'
+        APA = 'APA'
+        APB = 'APB'
+        BOD = 'BOD'
+        BWC = 'BWC'
+        DTM = 'DTM'
+        GGA = 'GGA'
+        GLL = 'GLL'
+        GRS = 'GRS'
+        GSA = 'GSA'
+        GST = 'GST'
+        GSV = 'GSV'
+        MSK = 'MSK'
+        MSS = 'MSS'
+        RMA = 'RMA'
+        RMB = 'RMB'
+        RMC = 'RMC'
+        RTE = 'RTE'
+        TRF = 'TRF'
+        STN = 'STN'
+        VBW = 'VBW'
+        VTG = 'VTG'
+        WCV = 'WCV'
+        WPL = 'WPL'
+        XTC = 'XTC'
+        XTE = 'XTE'
+        ZTG = 'ZTG'
+        ZDA = 'ZDA'
+
+    @staticmethod
+    def is_nmea_format(message):
+        return message[0] == '$'
